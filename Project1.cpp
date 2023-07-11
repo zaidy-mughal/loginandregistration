@@ -49,7 +49,7 @@ void checking_input(string mail,string pass){
 	emails.open("emails.txt");
         if (!emails.is_open()){
                 cout << "\t\t\tError! Please Bring all files in same folder.";
-                exit;
+                return;
         }
 	while(emails >> emaily >> passy){
 
